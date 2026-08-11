@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#f8f2e7" />
+  <title>Laura & Mathieu — 2 septembre 2027</title>
+  <meta name="description" content="Mariage de Laura & Mathieu à Saint-Rémy-de-Provence — 2 septembre 2027." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Italiana&family=Parisienne&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-photo">
+      <img src="assets/laura-mathieu.jpg" alt="Laura et Mathieu" />
+    </div>
+
+    <div class="hero-copy">
+      <p class="eyebrow">ON SE MARIE !</p>
+      <h1><span>Laura</span><small>&</small><span>Mathieu</span></h1>
+      <p class="date">JEUDI 2 SEPTEMBRE 2027</p>
+      <p class="place">Saint-Rémy-de-Provence</p>
+      <div class="ornament">❦</div>
+      <p class="intro">
+        On vous donne rendez-vous sous le soleil de Provence pour célébrer, dîner,
+        danser et profiter ensemble d’un moment inoubliable.
+      </p>
+    </div>
+  </header>
+
+  <main>
+    <section class="section programme">
+      <div class="section-title"><span>Le programme</span></div>
+
+      <div class="day-grid">
+        <article class="day-card">
+          <p class="day-kicker">JEUDI 2 SEPTEMBRE</p>
+          <h2>Le grand jour</h2>
+          <p>Cérémonie • Vin d’honneur • Dîner • Soirée dansante</p>
+        </article>
+
+        <article class="day-card">
+          <p class="day-kicker">VENDREDI 3 SEPTEMBRE</p>
+          <h2>On prolonge</h2>
+          <p>Brunch • Food trucks • Piscine • Farniente</p>
+        </article>
+      </div>
+
+      <p class="adult-note">
+        Pour que tout le monde profite pleinement de la fête,
+        <strong>nous avons choisi de célébrer ce week-end entre adultes.</strong>
+      </p>
+    </section>
+
+    <section class="section lodging" id="hebergements">
+      <div class="section-title"><span>Où dormir ?</span></div>
+
+      <p class="lead">
+        Nous vous proposerons ici une sélection d’hôtels, gîtes, mas et campings
+        autour de Saint-Rémy-de-Provence, dans plusieurs gammes de prix.
+        Les réservations resteront à la charge de chacun.
+      </p>
+
+      <div class="hotel-grid" id="hotelGrid">
+        <article class="hotel-card placeholder">
+          <p class="hotel-type">Sélection en cours</p>
+          <h3>Nos bonnes adresses arrivent bientôt</h3>
+          <p>Nous sommes en train de sélectionner les options les plus pratiques pour vous.</p>
+        </article>
+      </div>
+
+      <div class="shuttle-box">
+        <span class="icon">↔</span>
+        <div>
+          <h3>Les navettes, c’est pour nous</h3>
+          <p>
+            Laissez votre voiture à votre hébergement : nous organiserons les trajets
+            vers la maison ainsi que les retours au cours de la nuit.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section rsvp" id="rsvp">
+      <div class="section-title"><span>RSVP</span></div>
+
+      <p class="lead">
+        <strong>Merci de répondre individuellement</strong>, même si vous êtes invités en couple,
+        avant le <strong>31 mars 2027</strong>.
+      </p>
+
+      <form id="rsvpForm">
+        <div class="two-cols">
+          <label>Prénom
+            <input required name="prenom" autocomplete="given-name" />
+          </label>
+          <label>Nom
+            <input required name="nom" autocomplete="family-name" />
+          </label>
+        </div>
+
+        <label>E-mail
+          <input required type="email" name="email" autocomplete="email" />
+        </label>
+
+        <fieldset>
+          <legend>Jeudi 2 septembre</legend>
+          <label class="choice"><input required type="radio" name="jeudi" value="Oui" /> Oui, je serai là</label>
+          <label class="choice"><input required type="radio" name="jeudi" value="Non" /> Non, malheureusement</label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Vendredi 3 septembre — brunch & piscine</legend>
+          <label class="choice"><input required type="radio" name="vendredi" value="Oui" /> Oui, avec plaisir</label>
+          <label class="choice"><input required type="radio" name="vendredi" value="Non" /> Non</label>
+        </fieldset>
+
+        <label>Allergies / régime alimentaire
+          <textarea name="allergies" rows="3" placeholder="Ex. végétarien, gluten, fruits à coque…"></textarea>
+        </label>
+
+        <fieldset>
+          <legend>Avez-vous déjà réservé votre hébergement ?</legend>
+          <label class="choice"><input type="radio" name="hebergement_reserve" value="Oui" /> Oui</label>
+          <label class="choice"><input type="radio" name="hebergement_reserve" value="Non" /> Pas encore</label>
+        </fieldset>
+
+        <label>Nom de votre hébergement
+          <input name="hebergement" placeholder="Facultatif — vous pourrez nous le communiquer plus tard" />
+        </label>
+
+        <fieldset>
+          <legend>Pensez-vous utiliser les navettes ?</legend>
+          <label class="choice"><input required type="radio" name="navette" value="Oui" /> Oui</label>
+          <label class="choice"><input required type="radio" name="navette" value="Non" /> Non</label>
+          <label class="choice"><input required type="radio" name="navette" value="À confirmer" /> Je ne sais pas encore</label>
+        </fieldset>
+
+        <button type="submit">Envoyer ma réponse</button>
+        <p id="formStatus" class="status" role="status"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>Laura & Mathieu</p>
+    <small>02 • 09 • 2027 — Saint-Rémy-de-Provence</small>
+  </footer>
+
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
