@@ -13,17 +13,18 @@ function doPost(e) {
   var data = JSON.parse(e.postData.contents);
 
   sheet.appendRow([
-    new Date(),
-    data.prenom || "",
-    data.nom || "",
-    data.email || "",
-    data.jeudi || "",
-    data.vendredi || "",
-    data.allergies || "",
-    data.hebergement_reserve || "",
-    data.hebergement || "",
-    data.navette || ""
-  ]);
+  new Date(),
+  data.prenom || "",
+  data.nom || "",
+  data.email || "",
+  data.jeudi || "",
+  data.vendredi || "",
+  data.repas || "",
+  data.allergies || "",
+  data.navette || "",
+  data.hebergement || "",
+  ""
+]);
 
   return ContentService
     .createTextOutput(JSON.stringify({ok:true}))
