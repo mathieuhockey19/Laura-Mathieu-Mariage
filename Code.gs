@@ -3,25 +3,36 @@ function doGet() {
 }
 
 function doPost(e) {
+  var ss = SpreadsheetApp.openById(
+    "19P9NNva9R0Lku_rOMCgTYcQ-2xF7kXkhRkEMSj3evHc"
+  );
 
-  var ss = SpreadsheetApp.openById("https://docs.google.com/spreadsheets/d/19P9NNva9R0Lku_rOMCgTYcQ-2xF7kXkhRkEMSj3evHc/edit?gid=0#gid=0");
   var sheet = ss.getSheetByName("Réponses RSVP");
+
+  if (!sheet) {
+    return ContentService
+      .createTextOutput(JSON.stringify({
+        ok: false,
+        error: "Onglet Réponses RSVP introuvable"
+      }))
+      .setMimeType(ContentService.MimeType.JSON);
+  }
 
   var data = JSON.parse(e.postData.contents);
 
   sheet.appendRow([
-    new Date(),                      // Date réponse
-    data.prenom || "",              // Prénom
-    data.nom || "",                 // Nom
-    data.email || "",               // Email
-    data.jeudi || "",               // Présence jeudi
-    data.vendredi || "",            // Présence vendredi
-    data.repas || "",               // Repas
-    data.allergies || "",           // Allergies / régime
-    data.hebergement_reserve || "", // Hébergement réservé ?
-    data.hebergement || "",         // Nom hébergement
-    data.navette || "",             // Navette
-    ""                               // Commentaire
+    new Date(),
+    data.prenom || "",
+    data.nom || "",
+    data.email || "",
+    data.jeudi || "",
+    data.vendredi || "",
+    data.repas || "",
+    data.allergies || "",
+    data.hebergement_reserve || "",
+    data.hebergement || "",
+    data.navette || "",
+    ""
   ]);
 
   return ContentService
