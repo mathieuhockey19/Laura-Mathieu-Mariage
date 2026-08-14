@@ -1,32 +1,30 @@
-function doPost(e) {
-  var ss = SpreadsheetApp.getActiveSpreadsheet();
-  var sheet = ss.getSheetByName("RSVP");
+function doGet() {
+  return ContentService.createTextOutput("OK");
+}
 
-  if (!sheet) {
-    sheet = ss.insertSheet("RSVP");
-    sheet.appendRow([
-      "Date réponse","Prénom","Nom","Email","Jeudi 2 sept.","Vendredi 3 sept.",
-      "Allergies / régime","Hébergement réservé ?","Hébergement","Navette"
-    ]);
-  }
+function doPost(e) {
+
+  var ss = SpreadsheetApp.openById("https://docs.google.com/spreadsheets/d/19P9NNva9R0Lku_rOMCgTYcQ-2xF7kXkhRkEMSj3evHc/edit?gid=0#gid=0");
+  var sheet = ss.getSheetByName("Réponses RSVP");
 
   var data = JSON.parse(e.postData.contents);
 
   sheet.appendRow([
-  new Date(),
-  data.prenom || "",
-  data.nom || "",
-  data.email || "",
-  data.jeudi || "",
-  data.vendredi || "",
-  data.repas || "",
-  data.allergies || "",
-  data.navette || "",
-  data.hebergement || "",
-  ""
-]);
+    new Date(),                      // Date réponse
+    data.prenom || "",              // Prénom
+    data.nom || "",                 // Nom
+    data.email || "",               // Email
+    data.jeudi || "",               // Présence jeudi
+    data.vendredi || "",            // Présence vendredi
+    data.repas || "",               // Repas
+    data.allergies || "",           // Allergies / régime
+    data.hebergement_reserve || "", // Hébergement réservé ?
+    data.hebergement || "",         // Nom hébergement
+    data.navette || "",             // Navette
+    ""                               // Commentaire
+  ]);
 
   return ContentService
-    .createTextOutput(JSON.stringify({ok:true}))
+    .createTextOutput(JSON.stringify({ ok: true }))
     .setMimeType(ContentService.MimeType.JSON);
 }
