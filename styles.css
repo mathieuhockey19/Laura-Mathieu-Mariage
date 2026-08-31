@@ -607,13 +607,13 @@ a {
 
   left:
     max(
-      0px,
-      calc(50% - 760px)
+      15px,
+      calc(50% - 780px)
     );
 
-  bottom: 0;
+  bottom: -5px;
 
-  width: 355px;
+  width: 390px;
 
   pointer-events: none;
 }
