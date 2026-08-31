@@ -28,10 +28,9 @@ function doPost(e) {
   }
 
 
-  var data =
-    JSON.parse(
-      e.postData.contents
-    );
+  var data = JSON.parse(
+    e.postData.contents
+  );
 
 
   ensureHeaders_(sheet);
@@ -65,9 +64,9 @@ function doPost(e) {
 }
 
 
-// ==============================
-// EN-TÊTES DU GOOGLE SHEET
-// ==============================
+/* =====================================================
+   EN-TÊTES DU SHEET
+===================================================== */
 
 function ensureHeaders_(sheet) {
 
