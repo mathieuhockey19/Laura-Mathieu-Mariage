@@ -32,16 +32,22 @@ html {
 
 body {
   margin: 0;
-  font-family: "Cormorant Garamond", serif;
+
+  font-family:
+    "Cormorant Garamond",
+    serif;
+
   color: var(--ink);
 
   background:
     radial-gradient(
       circle at top,
-      rgba(255, 255, 255, 0.6),
+      rgba(255,255,255,0.6),
       transparent 42%
     ),
     var(--cream);
+
+  overflow-x: hidden;
 }
 
 a {
@@ -67,9 +73,13 @@ img {
 
   overflow: hidden;
 
-  background-image: url("assets/Mas1.jpg");
+  background-image:
+    url("assets/Mas1.jpg");
+
   background-size: cover;
-  background-position: center 48%;
+
+  background-position:
+    center 48%;
 }
 
 .hero-overlay {
@@ -79,10 +89,10 @@ img {
   background:
     linear-gradient(
       90deg,
-      rgba(12, 22, 15, 0.84) 0%,
-      rgba(12, 22, 15, 0.65) 34%,
-      rgba(12, 22, 15, 0.25) 65%,
-      rgba(12, 22, 15, 0.08) 100%
+      rgba(12,22,15,0.84) 0%,
+      rgba(12,22,15,0.65) 34%,
+      rgba(12,22,15,0.25) 65%,
+      rgba(12,22,15,0.08) 100%
     );
 }
 
@@ -90,7 +100,8 @@ img {
   position: relative;
   z-index: 1;
 
-  width: min(760px, 92%);
+  width:
+    min(760px,92%);
 
   padding:
     100px
@@ -99,21 +110,22 @@ img {
     7vw;
 
   text-align: center;
+
   color: white;
 }
 
 .hero h1 {
   margin: 0;
 
-  font-family: "Cormorant Garamond", serif;
-  font-size: clamp(70px, 8vw, 112px);
+  font-size:
+    clamp(70px,8vw,112px);
 
   font-weight: 500;
+
   line-height: 0.9;
 
   text-shadow:
-    0 3px 20px
-    rgba(0, 0, 0, 0.25);
+    0 3px 20px rgba(0,0,0,0.25);
 }
 
 .hero h1 span {
@@ -122,40 +134,56 @@ img {
 }
 
 .ampersand {
-  font-family: "Parisienne", cursive !important;
-  color: var(--wedding-gold);
+  font-family:
+    "Parisienne",
+    cursive !important;
+
+  color:
+    var(--wedding-gold);
+
   font-weight: 400;
 }
 
 .hero-eyebrow {
-  margin: 30px 0 15px;
+  margin:
+    30px 0 15px;
 
   font-size: 14px;
-  letter-spacing: 0.35em;
+
+  letter-spacing:
+    0.35em;
+
   font-weight: 600;
 }
 
 .hero-divider {
   display: flex;
+
   align-items: center;
+
   justify-content: center;
 
   gap: 16px;
-  margin: 15px auto 18px;
+
+  margin:
+    15px auto 18px;
 }
 
 .hero-divider span {
-  display: block;
-
   width: 85px;
+
   height: 1px;
 
-  background: rgba(255, 255, 255, 0.7);
+  background:
+    rgba(255,255,255,0.7);
 }
 
 .hero-divider b {
-  color: var(--wedding-gold);
+  color:
+    var(--wedding-gold);
+
   font-size: 22px;
+
   font-weight: normal;
 }
 
@@ -163,172 +191,269 @@ img {
   margin: 0;
 
   font-size: 20px;
-  letter-spacing: 0.18em;
+
+  letter-spacing:
+    0.18em;
+
   font-weight: 600;
 }
 
 .hero-place {
-  margin: 12px 0 0;
+  margin:
+    12px 0 0;
 
   font-size: 14px;
-  letter-spacing: 0.13em;
+
+  letter-spacing:
+    0.13em;
 }
 
 .hero-place span {
-  margin: 0 7px;
-  color: var(--wedding-gold);
+  margin:
+    0 7px;
+
+  color:
+    var(--wedding-gold);
 }
 
 .hero-intro {
   max-width: 630px;
 
-  margin: 30px auto 0;
+  margin:
+    30px auto 0;
 
   font-size: 22px;
+
   line-height: 1.5;
 
-  color: rgba(255, 255, 255, 0.92);
+  color:
+    rgba(255,255,255,0.92);
 }
 
 
 /* =========================
-   SECTIONS
+   SECTIONS GÉNÉRALES
 ========================= */
 
 .section {
-  width: min(1150px, calc(100% - 40px));
-  margin: 0 auto;
-  padding: 80px 0;
+  width:
+    min(1150px,calc(100% - 40px));
+
+  margin:
+    0 auto;
+
+  padding:
+    80px 0;
 }
 
 .section-heading {
   max-width: 750px;
-  margin: 0 auto 50px;
+
+  margin:
+    0 auto 50px;
+
   text-align: center;
 }
 
 .section-kicker {
-  margin: 0 0 8px;
+  margin:
+    0 0 8px;
 
   font-size: 14px;
-  font-weight: 600;
-  letter-spacing: 0.25em;
 
-  color: var(--wedding-gold);
+  font-weight: 600;
+
+  letter-spacing:
+    0.25em;
+
+  color:
+    var(--wedding-gold);
 }
 
 .section-heading h2 {
   margin: 0;
 
-  font-family: "Italiana", serif;
+  font-family:
+    "Italiana",
+    serif;
+
   font-weight: 400;
 
-  font-size: clamp(42px, 5vw, 62px);
+  font-size:
+    clamp(42px,5vw,62px);
 
-  color: var(--olive-dark);
+  color:
+    var(--olive-dark);
 }
 
 .section-ornament {
-  margin: 12px 0 18px;
+  margin:
+    12px 0 18px;
 
   font-size: 27px;
-  color: var(--wedding-gold);
+
+  color:
+    var(--wedding-gold);
 }
 
 .section-intro {
   margin: 0;
 
   font-size: 21px;
+
   line-height: 1.55;
 }
 
 
 /* =========================
-   PROGRAMME
+   ZONE PROGRAMME
+========================= */
+
+.programme-stage {
+  position: relative;
+
+  width: 100%;
+
+  min-height: 720px;
+
+  margin-top: -115px;
+
+  padding-bottom: 40px;
+
+  overflow: hidden;
+}
+
+
+/* =========================
+   CARTE PROGRAMME
 ========================= */
 
 .programme-card {
   position: relative;
+
   z-index: 4;
 
-  max-width: 1050px;
+  width:
+    min(1030px,calc(100% - 380px));
 
-  margin-top: -115px;
+  min-height: 680px;
 
-  padding: 48px 50px 42px;
+  margin:
+    0 auto;
+
+  padding:
+    48px
+    72px
+    36px;
 
   background:
-    rgba(255, 250, 240, 0.96);
+    rgba(255,250,240,0.97);
 
   border:
-    1px solid rgba(182, 144, 73, 0.45);
+    1px solid
+    rgba(182,144,73,0.42);
+
+  border-radius:
+    0 0 18px 18px;
 
   box-shadow:
-    0 25px 60px
-    rgba(29, 35, 24, 0.12);
+    0 25px 65px
+    rgba(29,35,24,0.13);
 }
 
-.programme-card .section-heading {
-  margin-bottom: 28px;
+.programme-heading {
+  margin-bottom: 34px;
 }
 
-.programme-card .section-heading h2 {
-  font-size: clamp(36px, 4vw, 50px);
+.programme-heading h2 {
+  font-size:
+    clamp(42px,4vw,58px);
 }
 
-.programme-card .section-ornament {
-  margin: 8px 0 10px;
+.programme-heading .section-ornament {
+  margin:
+    8px 0 10px;
 }
+
+
+/* =========================
+   JOURS
+========================= */
 
 .day-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+
+  grid-template-columns:
+    1fr 1fr;
+
   gap: 0;
 }
 
 .day-column {
-  padding: 5px 35px;
+  padding:
+    5px 45px;
 }
 
 .day-column:first-child {
-  border-right: 1px solid var(--line);
+  border-right:
+    1px solid
+    var(--line);
 }
 
 .day-label {
-  margin: 0 0 3px;
+  margin:
+    0 0 4px;
 
   text-align: center;
 
   font-size: 13px;
-  font-weight: 600;
-  letter-spacing: 0.25em;
 
-  color: var(--wedding-gold);
+  font-weight: 600;
+
+  letter-spacing:
+    0.25em;
+
+  color:
+    var(--wedding-gold);
 }
 
 .day-column h3 {
-  margin: 0 0 22px;
+  margin:
+    0 0 28px;
 
   text-align: center;
 
-  font-family: "Italiana", serif;
+  font-family:
+    "Italiana",
+    serif;
+
   font-weight: 400;
 
   font-size: 30px;
 
-  color: var(--olive-dark);
+  color:
+    var(--olive-dark);
 }
+
+
+/* =========================
+   TIMELINE
+========================= */
 
 .timeline {
   display: flex;
+
   flex-direction: column;
-  gap: 18px;
+
+  gap: 19px;
 }
 
 .timeline-item {
   display: grid;
 
-  grid-template-columns: 60px 1fr;
+  grid-template-columns:
+    58px 1fr;
+
   gap: 12px;
 }
 
@@ -336,9 +461,11 @@ img {
   padding-top: 3px;
 
   font-size: 13px;
+
   font-weight: 600;
 
-  color: var(--wedding-gold);
+  color:
+    var(--wedding-gold);
 }
 
 .timeline-item strong {
@@ -348,146 +475,211 @@ img {
 
   font-size: 18px;
 
-  color: var(--olive-dark);
+  color:
+    var(--olive-dark);
 }
 
 .timeline-item p {
   margin: 0;
 
   font-size: 16px;
+
   line-height: 1.35;
-}
-
-.venue-note {
-  margin: 35px auto 0;
-
-  padding: 16px 20px;
-
-  max-width: 700px;
-
-  text-align: center;
-
-  border-top: 1px solid var(--line);
-  border-bottom: 1px solid var(--line);
-
-  font-size: 17px;
-  line-height: 1.4;
-}
-
-.venue-note strong {
-  color: var(--olive-dark);
-  font-size: 20px;
-}
-
-.adult-note {
-  margin: 18px 0 0;
-
-  text-align: center;
-
-  font-style: italic;
-  font-size: 16px;
 }
 
 
 /* =========================
-   LAURA & MATHIEU
+   LIEU
 ========================= */
 
-.couple-section {
-  width: min(1000px, calc(100% - 40px));
+.venue-note {
+  max-width: 690px;
 
-  margin: 55px auto 70px;
+  margin:
+    34px auto 0;
 
-  display: grid;
-  grid-template-columns: 0.9fr 1.1fr;
-  align-items: center;
+  padding:
+    17px 20px;
 
-  gap: 30px;
-}
-
-.couple-text {
-  padding: 10px 20px;
   text-align: center;
+
+  border-top:
+    1px solid
+    var(--line);
+
+  border-bottom:
+    1px solid
+    var(--line);
+
+  font-size: 16px;
+
+  line-height: 1.4;
 }
 
-.couple-kicker {
-  margin: 0 0 8px;
+.venue-note strong {
+  font-family:
+    "Italiana",
+    serif;
 
-  font-size: 13px;
-  letter-spacing: 0.22em;
-
-  color: var(--wedding-gold);
-
-  font-weight: 600;
-}
-
-.couple-text h2 {
-  margin: 0;
-
-  font-family: "Italiana", serif;
-
-  font-size: clamp(38px, 4vw, 56px);
+  font-size: 20px;
 
   font-weight: 400;
 
-  color: var(--olive-dark);
+  color:
+    var(--olive-dark);
 }
 
-.couple-ornament {
-  margin: 10px 0 14px;
+.adult-note {
+  margin:
+    15px 0 0;
 
-  font-size: 24px;
+  text-align: center;
 
-  color: var(--wedding-gold);
+  font-style: italic;
+
+  font-size: 15px;
 }
 
-.couple-text p:last-child {
-  max-width: 420px;
 
-  margin: 0 auto;
+/* =========================
+   PHOTO LAURA & MATHIEU
+========================= */
 
-  font-size: 19px;
-  line-height: 1.5;
+.programme-couple {
+  position: absolute;
 
-  color: var(--ink);
+  z-index: 7;
+
+  left:
+    max(0px,calc(50% - 770px));
+
+  bottom: 5px;
+
+  width: 390px;
+
+  pointer-events: none;
 }
 
-.couple-photo-wrap {
-  position: relative;
+.programme-couple img {
+  display: block;
 
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
+  width: 100%;
 
-  min-height: 390px;
+  height: auto;
+
+  filter:
+    drop-shadow(
+      0 15px 18px
+      rgba(20,30,20,0.12)
+    );
 }
 
-.couple-photo-wrap::before {
+
+/* =========================
+   OLIVIERS
+========================= */
+
+.olive-decoration {
+  position: absolute;
+
+  z-index: 2;
+
+  width: 250px;
+
+  height: 600px;
+
+  fill:
+    rgba(85,100,67,0.68);
+
+  opacity: 0.72;
+
+  pointer-events: none;
+}
+
+.olive-stem {
+  fill: none;
+
+  stroke:
+    rgba(85,100,67,0.72);
+
+  stroke-width: 5;
+
+  stroke-linecap: round;
+}
+
+.olive-fruit {
+  fill:
+    rgba(62,74,51,0.9);
+}
+
+.olive-left {
+  left: -55px;
+
+  top: 80px;
+
+  transform:
+    rotate(-12deg);
+}
+
+.olive-right {
+  right: -60px;
+
+  top: 100px;
+
+  transform:
+    scaleX(-1)
+    rotate(-7deg);
+}
+
+
+/* =========================
+   LÉGER FONDU DÉCORATIF
+========================= */
+
+.programme-stage::before {
   content: "";
 
   position: absolute;
 
-  width: 320px;
-  height: 320px;
+  left: -100px;
 
-  border-radius: 50%;
+  bottom: 0;
+
+  width: 520px;
+
+  height: 450px;
 
   background:
-    rgba(182, 144, 73, 0.10);
+    radial-gradient(
+      ellipse at center,
+      rgba(182,144,73,0.09),
+      transparent 70%
+    );
 
-  z-index: 0;
+  z-index: 1;
 }
 
-.couple-photo {
-  position: relative;
+.programme-stage::after {
+  content: "";
+
+  position: absolute;
+
+  right: -100px;
+
+  top: 80px;
+
+  width: 480px;
+
+  height: 500px;
+
+  background:
+    radial-gradient(
+      ellipse at center,
+      rgba(147,160,127,0.12),
+      transparent 70%
+    );
+
   z-index: 1;
-
-  display: block;
-
-  width: 100%;
-  max-width: 390px;
-
-  height: auto;
 }
 
 
@@ -499,8 +691,7 @@ img {
   display: grid;
 
   grid-template-columns:
-    58%
-    42%;
+    58% 42%;
 
   min-height: 610px;
 
@@ -522,6 +713,7 @@ img {
     url("assets/Mas2.jpg");
 
   background-size: cover;
+
   background-position: center;
 }
 
@@ -531,9 +723,11 @@ img {
   flex-direction: column;
 
   justify-content: center;
+
   align-items: center;
 
-  padding: 80px 65px;
+  padding:
+    80px 65px;
 
   text-align: center;
 
@@ -541,30 +735,39 @@ img {
 }
 
 .mas-kicker {
-  margin: 0 0 8px;
+  margin:
+    0 0 8px;
 
-  color: var(--wedding-gold);
+  color:
+    var(--wedding-gold);
 
-  letter-spacing: 0.25em;
+  letter-spacing:
+    0.25em;
 
   font-size: 14px;
+
   font-weight: 600;
 }
 
 .mas-showcase-text h2 {
   margin: 0;
 
-  font-family: "Italiana", serif;
+  font-family:
+    "Italiana",
+    serif;
 
-  font-size: clamp(42px, 4vw, 60px);
+  font-size:
+    clamp(42px,4vw,60px);
 
   font-weight: 400;
 }
 
 .mas-ornament {
-  margin: 18px 0;
+  margin:
+    18px 0;
 
-  color: var(--wedding-gold);
+  color:
+    var(--wedding-gold);
 
   font-size: 28px;
 }
@@ -572,13 +775,15 @@ img {
 .mas-showcase-text p {
   max-width: 440px;
 
-  margin: 8px auto;
+  margin:
+    8px auto;
 
   font-size: 21px;
+
   line-height: 1.5;
 
   color:
-    rgba(255, 255, 255, 0.9);
+    rgba(255,255,255,0.9);
 }
 
 
@@ -594,7 +799,7 @@ img {
   display: grid;
 
   grid-template-columns:
-    repeat(2, 1fr);
+    repeat(2,1fr);
 
   gap: 25px;
 }
@@ -602,13 +807,17 @@ img {
 .hotel-card {
   position: relative;
 
-  padding: 35px 35px 32px;
+  padding:
+    35px
+    35px
+    32px;
 
   background:
-    rgba(255, 250, 240, 0.9);
+    rgba(255,250,240,0.9);
 
   border:
-    1px solid var(--line);
+    1px solid
+    var(--line);
 
   transition:
     transform 0.2s ease,
@@ -621,44 +830,55 @@ img {
 
   box-shadow:
     0 16px 35px
-    rgba(34, 40, 28, 0.08);
+    rgba(34,40,28,0.08);
 }
 
 .hotel-price {
   position: absolute;
 
   top: 20px;
+
   right: 24px;
 
   font-size: 15px;
 
-  color: var(--wedding-gold);
+  color:
+    var(--wedding-gold);
 
-  letter-spacing: 0.08em;
+  letter-spacing:
+    0.08em;
 }
 
 .hotel-card h3 {
   max-width: 78%;
 
-  margin: 0 0 12px;
+  margin:
+    0 0 12px;
 
-  font-family: "Italiana", serif;
+  font-family:
+    "Italiana",
+    serif;
 
   font-size: 25px;
+
   font-weight: 400;
 
-  color: var(--olive-dark);
+  color:
+    var(--olive-dark);
 }
 
 .hotel-card p {
-  margin: 0 0 12px;
+  margin:
+    0 0 12px;
 
   font-size: 17px;
+
   line-height: 1.45;
 }
 
 .hotel-location {
-  color: var(--olive);
+  color:
+    var(--olive);
 
   font-style: italic;
 }
@@ -666,29 +886,32 @@ img {
 .hotel-card a {
   display: inline-block;
 
-  margin: 7px 14px 0 0;
+  margin:
+    7px 14px 0 0;
 
-  color: var(--olive-dark);
+  color:
+    var(--olive-dark);
 
   font-weight: 600;
 
   text-decoration: underline;
 
   text-decoration-color:
-    rgba(182, 144, 73, 0.55);
+    rgba(182,144,73,0.55);
 
   text-underline-offset: 4px;
 }
 
 
 /* =========================
-   NAVETTE
+   NAVETTES
 ========================= */
 
 .shuttle-box {
   margin-top: 45px;
 
-  padding: 45px 50px;
+  padding:
+    45px 50px;
 
   color: white;
 
@@ -703,37 +926,47 @@ img {
 }
 
 .shuttle-kicker {
-  margin: 0 0 8px;
+  margin:
+    0 0 8px;
 
-  color: var(--wedding-gold);
+  color:
+    var(--wedding-gold);
 
   font-size: 13px;
+
   font-weight: 600;
 
-  letter-spacing: 0.25em;
+  letter-spacing:
+    0.25em;
 }
 
 .shuttle-box h3 {
-  margin: 0 auto 12px;
+  margin:
+    0 auto 12px;
 
   max-width: 750px;
 
-  font-family: "Italiana", serif;
+  font-family:
+    "Italiana",
+    serif;
 
   font-size: 29px;
+
   font-weight: 400;
 }
 
 .shuttle-box p:last-child {
   max-width: 780px;
 
-  margin: 0 auto;
+  margin:
+    0 auto;
 
   font-size: 18px;
+
   line-height: 1.5;
 
   color:
-    rgba(255, 255, 255, 0.88);
+    rgba(255,255,255,0.88);
 }
 
 
@@ -743,7 +976,7 @@ img {
 
 .rsvp {
   width:
-    min(900px, calc(100% - 40px));
+    min(900px,calc(100% - 40px));
 
   margin-bottom: 80px;
 }
@@ -752,7 +985,7 @@ img {
   padding: 55px;
 
   background:
-    rgba(255, 250, 240, 0.96);
+    rgba(255,250,240,0.96);
 
   border:
     1px solid
@@ -760,14 +993,14 @@ img {
 
   box-shadow:
     0 20px 50px
-    rgba(38, 45, 31, 0.08);
+    rgba(38,45,31,0.08);
 }
 
 .form-grid {
   display: grid;
 
   grid-template-columns:
-    repeat(2, 1fr);
+    repeat(2,1fr);
 
   gap: 28px;
 }
@@ -788,6 +1021,7 @@ img {
 .form-field label,
 .form-field legend {
   font-size: 18px;
+
   font-weight: 600;
 
   color:
@@ -796,6 +1030,7 @@ img {
 
 fieldset.form-field {
   margin: 0;
+
   padding: 0;
 
   border: 0;
@@ -816,7 +1051,7 @@ textarea {
   border-radius: 0;
 
   background:
-    rgba(255, 255, 255, 0.72);
+    rgba(255,255,255,0.72);
 
   font-family: inherit;
 
@@ -840,7 +1075,7 @@ textarea:focus {
 
   box-shadow:
     0 0 0 3px
-    rgba(182, 144, 73, 0.10);
+    rgba(182,144,73,0.10);
 }
 
 textarea {
@@ -860,7 +1095,9 @@ textarea {
 
 .radio-column {
   flex-direction: column;
-  align-items: flex-start;
+
+  align-items:
+    flex-start;
 
   gap: 12px;
 }
@@ -891,7 +1128,8 @@ textarea {
 
   min-width: 230px;
 
-  margin: 45px auto 0;
+  margin:
+    45px auto 0;
 
   padding:
     16px 28px;
@@ -913,7 +1151,8 @@ textarea {
 
   font-weight: 600;
 
-  letter-spacing: 0.06em;
+  letter-spacing:
+    0.06em;
 
   cursor: pointer;
 
@@ -933,7 +1172,8 @@ textarea {
 .form-status {
   min-height: 24px;
 
-  margin: 20px 0 0;
+  margin:
+    20px 0 0;
 
   text-align: center;
 
@@ -970,17 +1210,20 @@ footer {
 }
 
 .footer-title {
-  margin: 0 0 20px;
+  margin:
+    0 0 20px;
 
   font-size: 14px;
 
   font-weight: 600;
 
-  letter-spacing: 0.18em;
+  letter-spacing:
+    0.18em;
 }
 
 .footer-names {
-  margin: 0 0 12px;
+  margin:
+    0 0 12px;
 
   font-family:
     "Parisienne",
@@ -998,7 +1241,34 @@ footer {
   font-size: 16px;
 
   color:
-    rgba(255, 255, 255, 0.75);
+    rgba(255,255,255,0.75);
+}
+
+
+/* =========================
+   TABLETTES
+========================= */
+
+@media (max-width: 1250px) {
+
+  .programme-card {
+    width:
+      min(920px,calc(100% - 180px));
+  }
+
+  .programme-couple {
+    left: -45px;
+
+    width: 330px;
+  }
+
+  .olive-left {
+    left: -120px;
+  }
+
+  .olive-right {
+    right: -100px;
+  }
 }
 
 
@@ -1010,16 +1280,18 @@ footer {
 
   .hero {
     min-height: 760px;
-    background-position: center;
+
+    background-position:
+      center;
   }
 
   .hero-overlay {
     background:
       linear-gradient(
         180deg,
-        rgba(12, 22, 15, 0.3) 0%,
-        rgba(12, 22, 15, 0.55) 45%,
-        rgba(12, 22, 15, 0.8) 100%
+        rgba(12,22,15,0.3) 0%,
+        rgba(12,22,15,0.55) 45%,
+        rgba(12,22,15,0.8) 100%
       );
   }
 
@@ -1031,12 +1303,13 @@ footer {
       24px
       135px;
 
-    align-self: flex-end;
+    align-self:
+      flex-end;
   }
 
   .hero h1 {
     font-size:
-      clamp(58px, 17vw, 82px);
+      clamp(58px,17vw,82px);
   }
 
   .hero-date {
@@ -1045,6 +1318,7 @@ footer {
 
   .hero-place {
     font-size: 12px;
+
     line-height: 1.6;
   }
 
@@ -1055,24 +1329,37 @@ footer {
 
   /* PROGRAMME */
 
-  .programme-card {
-    width:
-      calc(100% - 28px);
+  .programme-stage {
+    min-height: auto;
 
     margin-top: -80px;
 
     padding:
+      0 14px 35px;
+
+    overflow: hidden;
+  }
+
+  .programme-card {
+    width: 100%;
+
+    min-height: auto;
+
+    padding:
       42px
       22px
-      38px;
+      35px;
+
+    border-radius:
+      0 0 14px 14px;
   }
 
-  .programme-card .section-heading {
-    margin-bottom: 24px;
+  .programme-heading {
+    margin-bottom: 25px;
   }
 
-  .programme-card .section-heading h2 {
-    font-size: 38px;
+  .programme-heading h2 {
+    font-size: 39px;
   }
 
   .day-grid {
@@ -1103,8 +1390,7 @@ footer {
 
   .timeline-item {
     grid-template-columns:
-      56px
-      1fr;
+      55px 1fr;
   }
 
   .timeline-item strong {
@@ -1116,52 +1402,49 @@ footer {
   }
 
   .venue-note {
-    margin-top: 28px;
+    margin-top: 27px;
   }
 
 
-  /* COUPLE */
+  /* PHOTO SUR MOBILE */
 
-  .couple-section {
-    grid-template-columns:
-      1fr;
+  .programme-couple {
+    position: relative;
 
-    gap: 0;
+    left: auto;
+
+    bottom: auto;
+
+    z-index: 5;
+
+    width:
+      min(330px,88%);
 
     margin:
-      40px
-      auto
-      55px;
+      -20px auto 0;
   }
 
-  .couple-text {
-    padding:
-      0
-      10px;
+
+  /* ON ALLÈGE LES OLIVIERS SUR MOBILE */
+
+  .olive-decoration {
+    opacity: 0.25;
+
+    width: 150px;
+
+    height: 360px;
   }
 
-  .couple-text h2 {
-    font-size: 42px;
+  .olive-left {
+    left: -105px;
+
+    top: 280px;
   }
 
-  .couple-text p:last-child {
-    font-size: 18px;
-  }
+  .olive-right {
+    right: -105px;
 
-  .couple-photo-wrap {
-    min-height: auto;
-
-    margin-top: 5px;
-  }
-
-  .couple-photo-wrap::before {
-    width: 250px;
-    height: 250px;
-  }
-
-  .couple-photo {
-    width: 82%;
-    max-width: 330px;
+    top: 560px;
   }
 
 
@@ -1184,6 +1467,7 @@ footer {
       url("assets/Mas2.jpg");
 
     background-size: cover;
+
     background-position: center;
   }
 
@@ -1195,15 +1479,14 @@ footer {
   }
 
 
-  /* HÉBERGEMENTS */
+  /* AUTRES SECTIONS */
 
   .section {
     width:
       calc(100% - 30px);
 
     padding:
-      65px
-      0;
+      65px 0;
   }
 
   .hotel-grid {
@@ -1213,14 +1496,12 @@ footer {
 
   .hotel-card {
     padding:
-      30px
-      25px;
+      30px 25px;
   }
 
   .shuttle-box {
     padding:
-      38px
-      25px;
+      38px 25px;
   }
 
 
@@ -1233,8 +1514,7 @@ footer {
 
   .rsvp form {
     padding:
-      38px
-      22px;
+      38px 22px;
   }
 
   .form-grid {
@@ -1243,8 +1523,7 @@ footer {
   }
 
   .form-full {
-    grid-column:
-      auto;
+    grid-column: auto;
   }
 
   .radio-group {
@@ -1260,11 +1539,11 @@ footer {
 
   footer {
     padding:
-      60px
-      20px;
+      60px 20px;
   }
 
   .footer-names {
     font-size: 47px;
   }
+
 }
