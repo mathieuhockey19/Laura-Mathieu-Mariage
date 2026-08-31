@@ -622,15 +622,39 @@ a {
   display: block;
 
   width: 100%;
-
   height: auto;
+
+  /*
+    On fait disparaître progressivement
+    le bord droit et légèrement le bas.
+    Ça évite l'effet "photo dans une colonne".
+  */
+  -webkit-mask-image:
+    linear-gradient(
+      to right,
+      black 0%,
+      black 72%,
+      rgba(0, 0, 0, 0.85) 82%,
+      rgba(0, 0, 0, 0.35) 94%,
+      transparent 100%
+    );
+
+  mask-image:
+    linear-gradient(
+      to right,
+      black 0%,
+      black 72%,
+      rgba(0, 0, 0, 0.85) 82%,
+      rgba(0, 0, 0, 0.35) 94%,
+      transparent 100%
+    );
 
   filter:
     drop-shadow(
       0
       14px
       18px
-      rgba(20, 30, 20, 0.14)
+      rgba(20, 30, 20, 0.10)
     );
 }
 
