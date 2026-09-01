@@ -608,7 +608,7 @@ a {
   left:
     max(
       15px,
-      calc(50% - 780px)
+      calc(50% - 830px)
     );
 
   bottom: -5px;
