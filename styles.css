@@ -600,22 +600,45 @@ a {
    LAURA & MATHIEU À GAUCHE
 ====================================== */
 
-.programme-couple {
-  position: absolute;
+.programme-couple img {
+  display: block;
+  width: 100%;
+  height: auto;
 
-  z-index: 7;
-
-  left:
-    max(
-      15px,
-      calc(50% - 830px)
+  /*
+    Fondu léger à gauche
+    + fondu plus marqué à droite
+  */
+  -webkit-mask-image:
+    linear-gradient(
+      to right,
+      transparent 0%,
+      rgba(0, 0, 0, 0.35) 4%,
+      rgba(0, 0, 0, 0.85) 9%,
+      black 14%,
+      black 72%,
+      rgba(0, 0, 0, 0.85) 82%,
+      rgba(0, 0, 0, 0.35) 94%,
+      transparent 100%
     );
 
-  bottom: -5px;
+  mask-image:
+    linear-gradient(
+      to right,
+      transparent 0%,
+      rgba(0, 0, 0, 0.35) 4%,
+      rgba(0, 0, 0, 0.85) 9%,
+      black 14%,
+      black 72%,
+      rgba(0, 0, 0, 0.85) 82%,
+      rgba(0, 0, 0, 0.35) 94%,
+      transparent 100%
+    );
 
-  width: 390px;
-
-  pointer-events: none;
+  filter:
+    drop-shadow(
+      0 14px 18px rgba(20, 30, 20, 0.10)
+    );
 }
 
 .programme-couple img {
