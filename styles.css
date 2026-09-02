@@ -33,7 +33,6 @@ html {
 
 body {
   margin: 0;
-
   overflow-x: hidden;
 
   font-family:
@@ -82,7 +81,6 @@ a {
 
 .hero-overlay {
   position: absolute;
-
   inset: 0;
 
   background:
@@ -97,7 +95,6 @@ a {
 
 .hero-copy {
   position: relative;
-
   z-index: 2;
 
   width: min(760px, 92%);
@@ -109,7 +106,6 @@ a {
     7vw;
 
   text-align: center;
-
   color: white;
 }
 
@@ -120,7 +116,6 @@ a {
     clamp(70px, 8vw, 112px);
 
   font-weight: 500;
-
   line-height: 0.9;
 
   text-shadow:
@@ -130,7 +125,6 @@ a {
 
 .hero h1 span {
   display: inline;
-
   font-size: inherit;
 }
 
@@ -139,8 +133,7 @@ a {
     "Parisienne",
     cursive !important;
 
-  color:
-    var(--wedding-gold);
+  color: var(--wedding-gold);
 
   font-weight: 400;
 }
@@ -152,17 +145,13 @@ a {
     15px;
 
   font-size: 14px;
-
   font-weight: 600;
-
   letter-spacing: 0.35em;
 }
 
 .hero-divider {
   display: flex;
-
   align-items: center;
-
   justify-content: center;
 
   gap: 16px;
@@ -177,7 +166,6 @@ a {
   display: block;
 
   width: 85px;
-
   height: 1px;
 
   background:
@@ -185,11 +173,9 @@ a {
 }
 
 .hero-divider b {
-  color:
-    var(--wedding-gold);
+  color: var(--wedding-gold);
 
   font-size: 22px;
-
   font-weight: normal;
 }
 
@@ -197,9 +183,7 @@ a {
   margin: 0;
 
   font-size: 20px;
-
   font-weight: 600;
-
   letter-spacing: 0.18em;
 }
 
@@ -210,7 +194,6 @@ a {
     0;
 
   font-size: 14px;
-
   letter-spacing: 0.13em;
 }
 
@@ -219,8 +202,7 @@ a {
     0
     7px;
 
-  color:
-    var(--wedding-gold);
+  color: var(--wedding-gold);
 }
 
 .hero-intro {
@@ -232,7 +214,6 @@ a {
     0;
 
   font-size: 22px;
-
   line-height: 1.5;
 
   color:
@@ -275,13 +256,10 @@ a {
     8px;
 
   font-size: 13px;
-
   font-weight: 600;
-
   letter-spacing: 0.28em;
 
-  color:
-    var(--wedding-gold);
+  color: var(--wedding-gold);
 }
 
 .section-heading h2 {
@@ -296,8 +274,7 @@ a {
 
   font-weight: 400;
 
-  color:
-    var(--olive-dark);
+  color: var(--olive-dark);
 }
 
 .section-ornament {
@@ -308,15 +285,13 @@ a {
 
   font-size: 26px;
 
-  color:
-    var(--wedding-gold);
+  color: var(--wedding-gold);
 }
 
 .section-intro {
   margin: 0;
 
   font-size: 21px;
-
   line-height: 1.55;
 }
 
@@ -329,7 +304,6 @@ a {
   position: relative;
 
   width: 100%;
-
   min-height: 730px;
 
   margin-top: -115px;
@@ -349,7 +323,6 @@ a {
 
 .programme-card {
   position: relative;
-
   z-index: 4;
 
   width:
@@ -407,8 +380,7 @@ a {
 
   font-weight: 400;
 
-  color:
-    var(--olive-dark);
+  color: var(--olive-dark);
 }
 
 .programme-heading .section-ornament {
@@ -453,13 +425,10 @@ a {
   text-align: center;
 
   font-size: 13px;
-
   font-weight: 600;
-
   letter-spacing: 0.25em;
 
-  color:
-    var(--wedding-gold);
+  color: var(--wedding-gold);
 }
 
 .day-column h3 {
@@ -475,11 +444,9 @@ a {
     serif;
 
   font-size: 30px;
-
   font-weight: 400;
 
-  color:
-    var(--olive-dark);
+  color: var(--olive-dark);
 }
 
 
@@ -489,7 +456,6 @@ a {
 
 .timeline {
   display: flex;
-
   flex-direction: column;
 
   gap: 18px;
@@ -509,11 +475,9 @@ a {
   padding-top: 3px;
 
   font-size: 13px;
-
   font-weight: 600;
 
-  color:
-    var(--wedding-gold);
+  color: var(--wedding-gold);
 }
 
 .timeline-item strong {
@@ -523,15 +487,13 @@ a {
 
   font-size: 18px;
 
-  color:
-    var(--olive-dark);
+  color: var(--olive-dark);
 }
 
 .timeline-item p {
   margin: 0;
 
   font-size: 16px;
-
   line-height: 1.35;
 }
 
@@ -565,7 +527,6 @@ a {
     var(--line);
 
   font-size: 16px;
-
   line-height: 1.4;
 }
 
@@ -575,11 +536,9 @@ a {
     serif;
 
   font-size: 21px;
-
   font-weight: 400;
 
-  color:
-    var(--olive-dark);
+  color: var(--olive-dark);
 }
 
 .adult-note {
@@ -591,7 +550,6 @@ a {
   text-align: center;
 
   font-size: 15px;
-
   font-style: italic;
 }
 
@@ -619,7 +577,6 @@ a {
   overflow: hidden;
 }
 
-/* PHOTO */
 .programme-couple img {
   display: block;
 
@@ -636,6 +593,7 @@ a {
 }
 
 /* FONDU GAUCHE */
+
 .programme-couple::before {
   content: "";
 
@@ -650,16 +608,18 @@ a {
 
   pointer-events: none;
 
-  background: linear-gradient(
-    to right,
-    var(--cream) 0%,
-    rgba(248, 242, 231, 0.75) 30%,
-    rgba(248, 242, 231, 0.25) 70%,
-    transparent 100%
-  );
+  background:
+    linear-gradient(
+      to right,
+      var(--cream) 0%,
+      rgba(248, 242, 231, 0.75) 30%,
+      rgba(248, 242, 231, 0.25) 70%,
+      transparent 100%
+    );
 }
 
 /* FONDU DROIT */
+
 .programme-couple::after {
   content: "";
 
@@ -674,13 +634,14 @@ a {
 
   pointer-events: none;
 
-  background: linear-gradient(
-    to left,
-    var(--cream) 0%,
-    rgba(248, 242, 231, 0.80) 30%,
-    rgba(248, 242, 231, 0.30) 70%,
-    transparent 100%
-  );
+  background:
+    linear-gradient(
+      to left,
+      var(--cream) 0%,
+      rgba(248, 242, 231, 0.80) 30%,
+      rgba(248, 242, 231, 0.30) 70%,
+      transparent 100%
+    );
 }
 
 
@@ -694,7 +655,6 @@ a {
   z-index: 2;
 
   width: 250px;
-
   height: 620px;
 
   fill:
@@ -712,7 +672,6 @@ a {
     rgba(85, 100, 67, 0.68);
 
   stroke-width: 5;
-
   stroke-linecap: round;
 }
 
@@ -723,7 +682,6 @@ a {
 
 .olive-left {
   left: -65px;
-
   bottom: -15px;
 
   transform:
@@ -732,7 +690,6 @@ a {
 
 .olive-right {
   right: -50px;
-
   top: 40px;
 
   transform:
@@ -751,11 +708,9 @@ a {
   position: absolute;
 
   left: -120px;
-
   bottom: -80px;
 
   width: 520px;
-
   height: 520px;
 
   z-index: 1;
@@ -776,11 +731,9 @@ a {
   position: absolute;
 
   right: -130px;
-
   top: 30px;
 
   width: 520px;
-
   height: 520px;
 
   z-index: 1;
@@ -837,7 +790,6 @@ a {
   flex-direction: column;
 
   align-items: center;
-
   justify-content: center;
 
   padding:
@@ -856,9 +808,7 @@ a {
     8px;
 
   font-size: 14px;
-
   font-weight: 600;
-
   letter-spacing: 0.25em;
 
   color:
@@ -897,7 +847,6 @@ a {
     auto;
 
   font-size: 21px;
-
   line-height: 1.5;
 
   color:
@@ -958,7 +907,6 @@ a {
   position: absolute;
 
   top: 20px;
-
   right: 24px;
 
   font-size: 15px;
@@ -980,7 +928,6 @@ a {
     serif;
 
   font-size: 25px;
-
   font-weight: 400;
 
   color:
@@ -994,7 +941,6 @@ a {
     12px;
 
   font-size: 17px;
-
   line-height: 1.45;
 }
 
@@ -1059,9 +1005,7 @@ a {
     8px;
 
   font-size: 13px;
-
   font-weight: 600;
-
   letter-spacing: 0.25em;
 
   color:
@@ -1081,7 +1025,6 @@ a {
     serif;
 
   font-size: 29px;
-
   font-weight: 400;
 }
 
@@ -1093,7 +1036,6 @@ a {
     auto;
 
   font-size: 18px;
-
   line-height: 1.5;
 
   color:
@@ -1155,7 +1097,6 @@ a {
 .form-field label,
 .form-field legend {
   font-size: 18px;
-
   font-weight: 600;
 
   color:
@@ -1164,7 +1105,6 @@ a {
 
 fieldset.form-field {
   margin: 0;
-
   padding: 0;
 
   border: 0;
@@ -1192,7 +1132,6 @@ textarea {
     rgba(255, 255, 255, 0.72);
 
   font-family: inherit;
-
   font-size: 17px;
 
   color:
@@ -1287,9 +1226,7 @@ textarea {
     serif;
 
   font-size: 18px;
-
   font-weight: 600;
-
   letter-spacing: 0.06em;
 
   cursor: pointer;
@@ -1350,9 +1287,7 @@ footer {
     20px;
 
   font-size: 14px;
-
   font-weight: 600;
-
   letter-spacing: 0.18em;
 }
 
@@ -1395,8 +1330,12 @@ footer {
 
   .programme-couple {
     left: -20px;
-
     width: 310px;
+  }
+
+  .programme-couple img {
+    width: 310px;
+    max-width: 310px;
   }
 
   .olive-left {
@@ -1413,45 +1352,7 @@ footer {
    MOBILE
 ====================================== */
 
-/* MOBILE */
 @media (max-width: 800px) {
-
-  .programme-couple {
-    position: relative !important;
-
-    left: -55px !important;
-    right: auto !important;
-
-    top: auto !important;
-    bottom: auto !important;
-
-    width: 270px !important;
-    max-width: 270px !important;
-
-    margin: -10px 0 -5px 0 !important;
-
-    overflow: visible !important;
-  }
-
-  .programme-couple img {
-    display: block !important;
-
-    width: 270px !important;
-    max-width: 270px !important;
-
-    height: auto !important;
-
-    margin: 0 !important;
-
-    object-fit: contain !important;
-  }
-
-  .programme-couple::before,
-  .programme-couple::after {
-    display: none !important;
-  }
-}
-
 
   /* PROGRAMME */
 
@@ -1468,7 +1369,6 @@ footer {
 
   .programme-card {
     width: 100%;
-
     min-height: auto;
 
     padding:
@@ -1486,8 +1386,7 @@ footer {
   }
 
   .day-grid {
-    grid-template-columns:
-      1fr;
+    grid-template-columns: 1fr;
   }
 
   .day-column {
@@ -1527,32 +1426,56 @@ footer {
   }
 
 
-  /* PHOTO SOUS LA CARTE SUR MOBILE */
+  /* LAURA & MATHIEU
+     Décalés à gauche sur mobile */
 
   .programme-couple {
     position: relative;
 
-    left: auto;
+    left: -55px;
+    right: auto;
 
+    top: auto;
     bottom: auto;
 
     z-index: 5;
 
-    width:
-      min(310px, 85%);
+    width: 270px;
+    max-width: 270px;
 
     margin:
-      -18px
-      auto
+      -10px
+      0
+      -5px
       0;
+
+    overflow: visible;
+
+    pointer-events: none;
+  }
+
+  .programme-couple img {
+    display: block;
+
+    width: 270px;
+    max-width: 270px;
+    height: auto;
+
+    margin: 0;
+
+    object-fit: contain;
+  }
+
+  .programme-couple::before,
+  .programme-couple::after {
+    display: none;
   }
 
 
-  /* OLIVIERS PLUS DISCRETS SUR MOBILE */
+  /* OLIVIERS */
 
   .olive-decoration {
     width: 150px;
-
     height: 380px;
 
     opacity: 0.22;
@@ -1560,13 +1483,11 @@ footer {
 
   .olive-left {
     left: -110px;
-
     bottom: 150px;
   }
 
   .olive-right {
     right: -110px;
-
     top: 450px;
   }
 
@@ -1574,8 +1495,7 @@ footer {
   /* MAS */
 
   .mas-showcase {
-    grid-template-columns:
-      1fr;
+    grid-template-columns: 1fr;
   }
 
   .mas-showcase-photo {
@@ -1617,8 +1537,7 @@ footer {
   /* HÔTELS */
 
   .hotel-grid {
-    grid-template-columns:
-      1fr;
+    grid-template-columns: 1fr;
   }
 
   .hotel-card {
@@ -1648,8 +1567,7 @@ footer {
   }
 
   .form-grid {
-    grid-template-columns:
-      1fr;
+    grid-template-columns: 1fr;
   }
 
   .form-full {
