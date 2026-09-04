@@ -1709,3 +1709,67 @@ footer {
       47px;
   }
 }
+
+
+/* ==========================================
+   CORRECTION FONDU PHOTO - DESKTOP / TABLETTE
+   Fondu réellement transparent
+========================================== */
+
+@media screen and (min-width: 801px) {
+
+  /* On garde le positionnement actuel de la photo */
+  .programme-couple {
+    overflow: visible;
+  }
+
+
+  /* Suppression totale des anciens voiles crème */
+  .programme-couple::before,
+  .programme-couple::after {
+    content: none !important;
+    display: none !important;
+    background: none !important;
+  }
+
+
+  /* Fondu transparent directement appliqué à la photo */
+  .programme-couple img {
+    display: block;
+
+    -webkit-mask-image: linear-gradient(
+      90deg,
+      transparent 0%,
+      rgba(0, 0, 0, 0.20) 3%,
+      rgba(0, 0, 0, 0.55) 6%,
+      rgba(0, 0, 0, 0.85) 10%,
+      black 15%,
+      black 85%,
+      rgba(0, 0, 0, 0.85) 90%,
+      rgba(0, 0, 0, 0.55) 94%,
+      rgba(0, 0, 0, 0.20) 97%,
+      transparent 100%
+    );
+
+    -webkit-mask-size: 100% 100%;
+    -webkit-mask-repeat: no-repeat;
+
+    mask-image: linear-gradient(
+      90deg,
+      transparent 0%,
+      rgba(0, 0, 0, 0.20) 3%,
+      rgba(0, 0, 0, 0.55) 6%,
+      rgba(0, 0, 0, 0.85) 10%,
+      black 15%,
+      black 85%,
+      rgba(0, 0, 0, 0.85) 90%,
+      rgba(0, 0, 0, 0.55) 94%,
+      rgba(0, 0, 0, 0.20) 97%,
+      transparent 100%
+    );
+
+    mask-size: 100% 100%;
+    mask-repeat: no-repeat;
+  }
+
+}
