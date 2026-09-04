@@ -1426,30 +1426,29 @@ footer {
   }
 
 
-  /* LAURA & MATHIEU
-     Décalés à gauche sur mobile */
+   /* =====================================
+     LAURA & MATHIEU - MOBILE
+  ====================================== */
 
   .programme-couple {
     position: relative;
 
-    left: -55px;
+    left: auto;
     right: auto;
-
     top: auto;
     bottom: auto;
 
     z-index: 5;
 
-    width: 270px;
-    max-width: 270px;
+    width: 320px;
+    max-width: 88vw;
 
     margin:
       -10px
-      0
-      -5px
-      0;
+      auto
+      -5px;
 
-    overflow: visible;
+    overflow: hidden;
 
     pointer-events: none;
   }
@@ -1457,20 +1456,75 @@ footer {
   .programme-couple img {
     display: block;
 
-    width: 270px;
-    max-width: 270px;
+    width: 100%;
+    max-width: none;
     height: auto;
 
-    margin: 0;
+    margin: 0 auto;
 
     object-fit: contain;
+
+    filter:
+      drop-shadow(
+        0 12px 16px rgba(20, 30, 20, 0.08)
+      );
   }
 
-  .programme-couple::before,
+  /* Fondu gauche */
+
+  .programme-couple::before {
+    content: "";
+
+    display: block;
+
+    position: absolute;
+    z-index: 8;
+
+    top: 0;
+    bottom: 0;
+    left: 0;
+
+    width: 45px;
+
+    pointer-events: none;
+
+    background:
+      linear-gradient(
+        to right,
+        var(--cream) 0%,
+        rgba(248, 242, 231, 0.75) 30%,
+        rgba(248, 242, 231, 0.25) 70%,
+        transparent 100%
+      );
+  }
+
+  /* Fondu droite */
+
   .programme-couple::after {
-    display: none;
-  }
+    content: "";
 
+    display: block;
+
+    position: absolute;
+    z-index: 8;
+
+    top: 0;
+    bottom: 0;
+    right: 0;
+
+    width: 55px;
+
+    pointer-events: none;
+
+    background:
+      linear-gradient(
+        to left,
+        var(--cream) 0%,
+        rgba(248, 242, 231, 0.80) 30%,
+        rgba(248, 242, 231, 0.25) 70%,
+        transparent 100%
+      );
+  }
 
   /* OLIVIERS */
 
