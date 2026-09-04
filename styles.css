@@ -1773,3 +1773,27 @@ footer {
   }
 
 }
+
+/* ==========================================
+   AJUSTEMENT PHOTO - DESKTOP
+   Plus d'espace entre la photo et le texte
+========================================== */
+
+@media screen and (min-width: 801px) {
+
+  .programme-couple {
+    left: max(
+      -10px,
+      calc(50% - 860px)
+    );
+
+    width: 350px;
+    max-width: 350px;
+  }
+
+  .programme-couple img {
+    width: 330px;
+    max-width: 330px;
+  }
+
+}
