@@ -5,15 +5,11 @@
 :root {
   --cream: #f8f2e7;
   --paper: #fffaf0;
-
   --olive: #556443;
   --olive-dark: #3e4a33;
-
   --sage: #93a07f;
-
   --ink: #35322d;
   --line: #d9cfbd;
-
   --wedding-gold: #b69049;
   --wedding-dark: #152016;
 }
@@ -34,11 +30,7 @@ html {
 body {
   margin: 0;
   overflow-x: hidden;
-
-  font-family:
-    "Cormorant Garamond",
-    serif;
-
+  font-family: "Cormorant Garamond", serif;
   color: var(--ink);
 
   background:
@@ -65,7 +57,6 @@ a {
 
 .hero {
   position: relative;
-
   min-height: 820px;
 
   display: flex;
@@ -112,9 +103,7 @@ a {
 .hero h1 {
   margin: 0;
 
-  font-size:
-    clamp(70px, 8vw, 112px);
-
+  font-size: clamp(70px, 8vw, 112px);
   font-weight: 500;
   line-height: 0.9;
 
@@ -129,20 +118,13 @@ a {
 }
 
 .ampersand {
-  font-family:
-    "Parisienne",
-    cursive !important;
-
+  font-family: "Parisienne", cursive !important;
   color: var(--wedding-gold);
-
   font-weight: 400;
 }
 
 .hero-eyebrow {
-  margin:
-    30px
-    0
-    15px;
+  margin: 30px 0 15px;
 
   font-size: 14px;
   font-weight: 600;
@@ -155,26 +137,19 @@ a {
   justify-content: center;
 
   gap: 16px;
-
-  margin:
-    15px
-    auto
-    18px;
+  margin: 15px auto 18px;
 }
 
 .hero-divider span {
   display: block;
-
   width: 85px;
   height: 1px;
 
-  background:
-    rgba(255, 255, 255, 0.7);
+  background: rgba(255, 255, 255, 0.7);
 }
 
 .hero-divider b {
   color: var(--wedding-gold);
-
   font-size: 22px;
   font-weight: normal;
 }
@@ -188,36 +163,25 @@ a {
 }
 
 .hero-place {
-  margin:
-    12px
-    0
-    0;
+  margin: 12px 0 0;
 
   font-size: 14px;
   letter-spacing: 0.13em;
 }
 
 .hero-place span {
-  margin:
-    0
-    7px;
-
+  margin: 0 7px;
   color: var(--wedding-gold);
 }
 
 .hero-intro {
   max-width: 630px;
-
-  margin:
-    30px
-    auto
-    0;
+  margin: 30px auto 0;
 
   font-size: 22px;
   line-height: 1.5;
 
-  color:
-    rgba(255, 255, 255, 0.92);
+  color: rgba(255, 255, 255, 0.92);
 }
 
 
@@ -226,34 +190,19 @@ a {
 ====================================== */
 
 .section {
-  width:
-    min(1150px, calc(100% - 40px));
-
-  margin:
-    0
-    auto;
-
-  padding:
-    80px
-    0;
+  width: min(1150px, calc(100% - 40px));
+  margin: 0 auto;
+  padding: 80px 0;
 }
 
 .section-heading {
   max-width: 750px;
-
-  margin:
-    0
-    auto
-    50px;
-
+  margin: 0 auto 50px;
   text-align: center;
 }
 
 .section-kicker {
-  margin:
-    0
-    0
-    8px;
+  margin: 0 0 8px;
 
   font-size: 13px;
   font-weight: 600;
@@ -265,26 +214,16 @@ a {
 .section-heading h2 {
   margin: 0;
 
-  font-family:
-    "Italiana",
-    serif;
-
-  font-size:
-    clamp(42px, 5vw, 62px);
-
+  font-family: "Italiana", serif;
+  font-size: clamp(42px, 5vw, 62px);
   font-weight: 400;
 
   color: var(--olive-dark);
 }
 
 .section-ornament {
-  margin:
-    12px
-    0
-    18px;
-
+  margin: 12px 0 18px;
   font-size: 26px;
-
   color: var(--wedding-gold);
 }
 
@@ -297,7 +236,7 @@ a {
 
 
 /* =====================================
-   PROGRAMME : GRAND CONTENEUR
+   PROGRAMME
 ====================================== */
 
 .programme-stage {
@@ -316,23 +255,14 @@ a {
   overflow: hidden;
 }
 
-
-/* =====================================
-   CARTE DU PROGRAMME
-====================================== */
-
 .programme-card {
   position: relative;
   z-index: 4;
 
-  width:
-    min(1030px, calc(100% - 360px));
-
+  width: min(1030px, calc(100% - 360px));
   min-height: 675px;
 
-  margin:
-    0
-    auto;
+  margin: 0 auto;
 
   padding:
     48px
@@ -343,8 +273,7 @@ a {
     rgba(255, 250, 240, 0.98);
 
   border:
-    1px
-    solid
+    1px solid
     rgba(182, 144, 73, 0.42);
 
   box-shadow:
@@ -360,34 +289,22 @@ a {
 ====================================== */
 
 .programme-heading {
-  margin:
-    0
-    auto
-    34px;
-
+  margin: 0 auto 34px;
   text-align: center;
 }
 
 .programme-heading h2 {
   margin: 0;
 
-  font-family:
-    "Italiana",
-    serif;
-
-  font-size:
-    clamp(42px, 4vw, 58px);
-
+  font-family: "Italiana", serif;
+  font-size: clamp(42px, 4vw, 58px);
   font-weight: 400;
 
   color: var(--olive-dark);
 }
 
 .programme-heading .section-ornament {
-  margin:
-    9px
-    0
-    10px;
+  margin: 9px 0 10px;
 }
 
 
@@ -397,30 +314,19 @@ a {
 
 .day-grid {
   display: grid;
-
-  grid-template-columns:
-    1fr
-    1fr;
+  grid-template-columns: 1fr 1fr;
 }
 
 .day-column {
-  padding:
-    5px
-    42px;
+  padding: 5px 42px;
 }
 
 .day-column:first-child {
-  border-right:
-    1px
-    solid
-    var(--line);
+  border-right: 1px solid var(--line);
 }
 
 .day-label {
-  margin:
-    0
-    0
-    4px;
+  margin: 0 0 4px;
 
   text-align: center;
 
@@ -432,17 +338,11 @@ a {
 }
 
 .day-column h3 {
-  margin:
-    0
-    0
-    27px;
+  margin: 0 0 27px;
 
   text-align: center;
 
-  font-family:
-    "Italiana",
-    serif;
-
+  font-family: "Italiana", serif;
   font-size: 30px;
   font-weight: 400;
 
@@ -457,17 +357,12 @@ a {
 .timeline {
   display: flex;
   flex-direction: column;
-
   gap: 18px;
 }
 
 .timeline-item {
   display: grid;
-
-  grid-template-columns:
-    58px
-    1fr;
-
+  grid-template-columns: 58px 1fr;
   gap: 12px;
 }
 
@@ -482,7 +377,6 @@ a {
 
 .timeline-item strong {
   display: block;
-
   margin-bottom: 2px;
 
   font-size: 18px;
@@ -505,36 +399,20 @@ a {
 .venue-note {
   max-width: 690px;
 
-  margin:
-    34px
-    auto
-    0;
-
-  padding:
-    17px
-    20px;
+  margin: 34px auto 0;
+  padding: 17px 20px;
 
   text-align: center;
 
-  border-top:
-    1px
-    solid
-    var(--line);
-
-  border-bottom:
-    1px
-    solid
-    var(--line);
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
 
   font-size: 16px;
   line-height: 1.4;
 }
 
 .venue-note strong {
-  font-family:
-    "Italiana",
-    serif;
-
+  font-family: "Italiana", serif;
   font-size: 21px;
   font-weight: 400;
 
@@ -542,10 +420,7 @@ a {
 }
 
 .adult-note {
-  margin:
-    18px
-    0
-    0;
+  margin: 18px 0 0;
 
   text-align: center;
 
@@ -555,7 +430,7 @@ a {
 
 
 /* =====================================
-   LAURA & MATHIEU À GAUCHE
+   LAURA & MATHIEU - DESKTOP
 ====================================== */
 
 .programme-couple {
@@ -573,7 +448,6 @@ a {
   max-width: 390px;
 
   pointer-events: none;
-
   overflow: hidden;
 }
 
@@ -588,11 +462,12 @@ a {
 
   filter:
     drop-shadow(
-      0 14px 18px rgba(20, 30, 20, 0.10)
+      0 14px 18px
+      rgba(20, 30, 20, 0.10)
     );
 }
 
-/* FONDU GAUCHE */
+/* fondu gauche desktop */
 
 .programme-couple::before {
   content: "";
@@ -618,7 +493,7 @@ a {
     );
 }
 
-/* FONDU DROIT */
+/* fondu droite desktop */
 
 .programme-couple::after {
   content: "";
@@ -651,14 +526,12 @@ a {
 
 .olive-decoration {
   position: absolute;
-
   z-index: 2;
 
   width: 250px;
   height: 620px;
 
-  fill:
-    rgba(85, 100, 67, 0.56);
+  fill: rgba(85, 100, 67, 0.56);
 
   opacity: 0.72;
 
@@ -668,24 +541,20 @@ a {
 .olive-stem {
   fill: none;
 
-  stroke:
-    rgba(85, 100, 67, 0.68);
-
+  stroke: rgba(85, 100, 67, 0.68);
   stroke-width: 5;
   stroke-linecap: round;
 }
 
 .olive-fruit {
-  fill:
-    rgba(62, 74, 51, 0.88);
+  fill: rgba(62, 74, 51, 0.88);
 }
 
 .olive-left {
   left: -65px;
   bottom: -15px;
 
-  transform:
-    rotate(-8deg);
+  transform: rotate(-8deg);
 }
 
 .olive-right {
@@ -699,7 +568,7 @@ a {
 
 
 /* =====================================
-   PETITES AURÉOLES CRÈME
+   AURÉOLES
 ====================================== */
 
 .programme-stage::before {
@@ -755,17 +624,13 @@ a {
 
 .mas-showcase {
   display: grid;
-
-  grid-template-columns:
-    58%
-    42%;
+  grid-template-columns: 58% 42%;
 
   min-height: 610px;
 
   overflow: hidden;
 
-  background:
-    var(--wedding-dark);
+  background: var(--wedding-dark);
 }
 
 .mas-showcase-photo {
@@ -780,77 +645,57 @@ a {
     url("assets/Mas2.jpg");
 
   background-size: cover;
-
   background-position: center;
 }
 
 .mas-showcase-text {
   display: flex;
-
   flex-direction: column;
 
   align-items: center;
   justify-content: center;
 
-  padding:
-    80px
-    65px;
+  padding: 80px 65px;
 
   text-align: center;
-
   color: white;
 }
 
 .mas-kicker {
-  margin:
-    0
-    0
-    8px;
+  margin: 0 0 8px;
 
   font-size: 14px;
   font-weight: 600;
   letter-spacing: 0.25em;
 
-  color:
-    var(--wedding-gold);
+  color: var(--wedding-gold);
 }
 
 .mas-showcase-text h2 {
   margin: 0;
 
-  font-family:
-    "Italiana",
-    serif;
-
-  font-size:
-    clamp(42px, 4vw, 60px);
-
+  font-family: "Italiana", serif;
+  font-size: clamp(42px, 4vw, 60px);
   font-weight: 400;
 }
 
 .mas-ornament {
-  margin:
-    18px
-    0;
+  margin: 18px 0;
 
   font-size: 28px;
 
-  color:
-    var(--wedding-gold);
+  color: var(--wedding-gold);
 }
 
 .mas-showcase-text p {
   max-width: 440px;
 
-  margin:
-    8px
-    auto;
+  margin: 8px auto;
 
   font-size: 21px;
   line-height: 1.5;
 
-  color:
-    rgba(255, 255, 255, 0.9);
+  color: rgba(255, 255, 255, 0.9);
 }
 
 
@@ -864,9 +709,7 @@ a {
 
 .hotel-grid {
   display: grid;
-
-  grid-template-columns:
-    repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr);
 
   gap: 25px;
 }
@@ -874,18 +717,12 @@ a {
 .hotel-card {
   position: relative;
 
-  padding:
-    35px
-    35px
-    32px;
+  padding: 35px 35px 32px;
 
   background:
     rgba(255, 250, 240, 0.9);
 
-  border:
-    1px
-    solid
-    var(--line);
+  border: 1px solid var(--line);
 
   transition:
     transform 0.2s ease,
@@ -893,8 +730,7 @@ a {
 }
 
 .hotel-card:hover {
-  transform:
-    translateY(-3px);
+  transform: translateY(-3px);
 
   box-shadow:
     0
@@ -911,62 +747,43 @@ a {
 
   font-size: 15px;
 
-  color:
-    var(--wedding-gold);
+  color: var(--wedding-gold);
 }
 
 .hotel-card h3 {
   max-width: 78%;
 
-  margin:
-    0
-    0
-    12px;
+  margin: 0 0 12px;
 
-  font-family:
-    "Italiana",
-    serif;
-
+  font-family: "Italiana", serif;
   font-size: 25px;
   font-weight: 400;
 
-  color:
-    var(--olive-dark);
+  color: var(--olive-dark);
 }
 
 .hotel-card p {
-  margin:
-    0
-    0
-    12px;
+  margin: 0 0 12px;
 
   font-size: 17px;
   line-height: 1.45;
 }
 
 .hotel-location {
-  color:
-    var(--olive);
-
+  color: var(--olive);
   font-style: italic;
 }
 
 .hotel-card a {
   display: inline-block;
 
-  margin:
-    7px
-    14px
-    0
-    0;
+  margin: 7px 14px 0 0;
 
-  color:
-    var(--olive-dark);
+  color: var(--olive-dark);
 
   font-weight: 600;
 
   text-decoration: underline;
-
   text-decoration-color:
     rgba(182, 144, 73, 0.55);
 
@@ -981,49 +798,32 @@ a {
 .shuttle-box {
   margin-top: 45px;
 
-  padding:
-    45px
-    50px;
+  padding: 45px 50px;
 
   text-align: center;
-
   color: white;
 
-  background:
-    var(--olive-dark);
+  background: var(--olive-dark);
 
-  border:
-    1px
-    solid
-    var(--wedding-gold);
+  border: 1px solid var(--wedding-gold);
 }
 
 .shuttle-kicker {
-  margin:
-    0
-    0
-    8px;
+  margin: 0 0 8px;
 
   font-size: 13px;
   font-weight: 600;
   letter-spacing: 0.25em;
 
-  color:
-    var(--wedding-gold);
+  color: var(--wedding-gold);
 }
 
 .shuttle-box h3 {
   max-width: 750px;
 
-  margin:
-    0
-    auto
-    12px;
+  margin: 0 auto 12px;
 
-  font-family:
-    "Italiana",
-    serif;
-
+  font-family: "Italiana", serif;
   font-size: 29px;
   font-weight: 400;
 }
@@ -1031,9 +831,7 @@ a {
 .shuttle-box p:last-child {
   max-width: 780px;
 
-  margin:
-    0
-    auto;
+  margin: 0 auto;
 
   font-size: 18px;
   line-height: 1.5;
@@ -1048,9 +846,7 @@ a {
 ====================================== */
 
 .rsvp {
-  width:
-    min(900px, calc(100% - 40px));
-
+  width: min(900px, calc(100% - 40px));
   margin-bottom: 80px;
 }
 
@@ -1060,10 +856,7 @@ a {
   background:
     rgba(255, 250, 240, 0.96);
 
-  border:
-    1px
-    solid
-    var(--line);
+  border: 1px solid var(--line);
 
   box-shadow:
     0
@@ -1074,24 +867,20 @@ a {
 
 .form-grid {
   display: grid;
-
-  grid-template-columns:
-    repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr);
 
   gap: 28px;
 }
 
 .form-field {
   display: flex;
-
   flex-direction: column;
 
   gap: 8px;
 }
 
 .form-full {
-  grid-column:
-    1 / -1;
+  grid-column: 1 / -1;
 }
 
 .form-field label,
@@ -1099,8 +888,7 @@ a {
   font-size: 18px;
   font-weight: 600;
 
-  color:
-    var(--olive-dark);
+  color: var(--olive-dark);
 }
 
 fieldset.form-field {
@@ -1115,15 +903,9 @@ input[type="email"],
 textarea {
   width: 100%;
 
-  padding:
-    14px
-    15px;
+  padding: 14px 15px;
 
-  border:
-    1px
-    solid
-    var(--line);
-
+  border: 1px solid var(--line);
   border-radius: 0;
 
   outline: none;
@@ -1134,15 +916,13 @@ textarea {
   font-family: inherit;
   font-size: 17px;
 
-  color:
-    var(--ink);
+  color: var(--ink);
 }
 
 input[type="text"]:focus,
 input[type="email"]:focus,
 textarea:focus {
-  border-color:
-    var(--wedding-gold);
+  border-color: var(--wedding-gold);
 
   box-shadow:
     0
@@ -1158,19 +938,15 @@ textarea {
 
 .radio-group {
   display: flex;
-
   flex-wrap: wrap;
 
-  gap:
-    14px
-    26px;
+  gap: 14px 26px;
 
   margin-top: 7px;
 }
 
 .radio-column {
   flex-direction: column;
-
   align-items: flex-start;
 
   gap: 12px;
@@ -1178,7 +954,6 @@ textarea {
 
 .radio-group label {
   display: flex;
-
   align-items: center;
 
   gap: 8px;
@@ -1189,8 +964,7 @@ textarea {
 }
 
 .radio-group input {
-  accent-color:
-    var(--olive-dark);
+  accent-color: var(--olive-dark);
 }
 
 .disabled-fieldset {
@@ -1202,28 +976,17 @@ textarea {
 
   min-width: 230px;
 
-  margin:
-    45px
-    auto
-    0;
+  margin: 45px auto 0;
 
-  padding:
-    16px
-    28px;
+  padding: 16px 28px;
 
-  border:
-    1px
-    solid
-    var(--wedding-gold);
+  border: 1px solid var(--wedding-gold);
 
-  background:
-    var(--olive-dark);
+  background: var(--olive-dark);
 
   color: white;
 
-  font-family:
-    "Cormorant Garamond",
-    serif;
+  font-family: "Cormorant Garamond", serif;
 
   font-size: 18px;
   font-weight: 600;
@@ -1233,24 +996,19 @@ textarea {
 }
 
 .submit-button:hover {
-  background:
-    var(--wedding-dark);
+  background: var(--wedding-dark);
 }
 
 .form-status {
   min-height: 24px;
 
-  margin:
-    20px
-    0
-    0;
+  margin: 20px 0 0;
 
   text-align: center;
 
   font-size: 17px;
 
-  color:
-    var(--olive-dark);
+  color: var(--olive-dark);
 }
 
 
@@ -1259,16 +1017,13 @@ textarea {
 ====================================== */
 
 footer {
-  padding:
-    75px
-    25px;
+  padding: 75px 25px;
 
   text-align: center;
 
   color: white;
 
-  background:
-    var(--wedding-dark);
+  background: var(--wedding-dark);
 }
 
 .footer-heart {
@@ -1276,15 +1031,11 @@ footer {
 
   font-size: 25px;
 
-  color:
-    var(--wedding-gold);
+  color: var(--wedding-gold);
 }
 
 .footer-title {
-  margin:
-    0
-    0
-    20px;
+  margin: 0 0 20px;
 
   font-size: 14px;
   font-weight: 600;
@@ -1292,19 +1043,13 @@ footer {
 }
 
 .footer-names {
-  margin:
-    0
-    0
-    12px;
+  margin: 0 0 12px;
 
-  font-family:
-    "Parisienne",
-    cursive;
+  font-family: "Parisienne", cursive;
 
   font-size: 55px;
 
-  color:
-    var(--wedding-gold);
+  color: var(--wedding-gold);
 }
 
 .footer-date {
@@ -1321,7 +1066,7 @@ footer {
    TABLETTE
 ====================================== */
 
-@media (max-width: 1250px) {
+@media (max-width: 1250px) and (min-width: 801px) {
 
   .programme-card {
     width:
@@ -1330,7 +1075,9 @@ footer {
 
   .programme-couple {
     left: -20px;
+
     width: 310px;
+    max-width: 310px;
   }
 
   .programme-couple img {
@@ -1352,7 +1099,7 @@ footer {
    MOBILE
 ====================================== */
 
-@media (max-width: 800px) {
+@media screen and (max-width: 800px) {
 
   /* PROGRAMME */
 
@@ -1365,6 +1112,8 @@ footer {
       0
       14px
       25px;
+
+    overflow: hidden;
   }
 
   .programme-card {
@@ -1402,8 +1151,7 @@ footer {
     border-right: 0;
 
     border-bottom:
-      1px
-      solid
+      1px solid
       var(--line);
   }
 
@@ -1426,29 +1174,34 @@ footer {
   }
 
 
-   /* =====================================
+  /* =====================================
      LAURA & MATHIEU - MOBILE
+     Plus petits + centrés
+     Fondu UNIQUEMENT gauche/droite
   ====================================== */
 
   .programme-couple {
     position: relative;
 
-    left: auto;
+    left: 50%;
     right: auto;
     top: auto;
     bottom: auto;
 
     z-index: 5;
 
-    width: 320px;
-    max-width: 88vw;
+    width: 220px;
+    max-width: 62vw;
 
     margin:
-      -10px
-      auto
-      -5px;
+      5px
+      0
+      10px;
 
-    overflow: hidden;
+    transform:
+      translateX(-50%);
+
+    overflow: visible;
 
     pointer-events: none;
   }
@@ -1457,20 +1210,31 @@ footer {
     display: block;
 
     width: 100%;
-    max-width: none;
+    max-width: 100%;
     height: auto;
 
-    margin: 0 auto;
+    margin: 0;
 
     object-fit: contain;
 
+    /*
+      IMPORTANT :
+      aucun mask ici.
+      Donc aucun fondu vertical
+      et aucune bande blanche en haut.
+    */
+    -webkit-mask-image: none;
+    mask-image: none;
+
     filter:
       drop-shadow(
-        0 12px 16px rgba(20, 30, 20, 0.08)
+        0 8px 10px
+        rgba(20, 30, 20, 0.07)
       );
   }
 
-  /* Fondu gauche */
+
+  /* FONDU GAUCHE UNIQUEMENT */
 
   .programme-couple::before {
     content: "";
@@ -1478,27 +1242,30 @@ footer {
     display: block;
 
     position: absolute;
+
     z-index: 8;
 
+    left: -1px;
     top: 0;
     bottom: 0;
-    left: 0;
 
-    width: 45px;
+    width: 42px;
 
     pointer-events: none;
 
     background:
       linear-gradient(
-        to right,
+        90deg,
         var(--cream) 0%,
-        rgba(248, 242, 231, 0.75) 30%,
+        rgba(248, 242, 231, 0.92) 12%,
+        rgba(248, 242, 231, 0.65) 38%,
         rgba(248, 242, 231, 0.25) 70%,
-        transparent 100%
+        rgba(248, 242, 231, 0) 100%
       );
   }
 
-  /* Fondu droite */
+
+  /* FONDU DROITE UNIQUEMENT */
 
   .programme-couple::after {
     content: "";
@@ -1506,25 +1273,28 @@ footer {
     display: block;
 
     position: absolute;
+
     z-index: 8;
 
+    right: -1px;
     top: 0;
     bottom: 0;
-    right: 0;
 
-    width: 55px;
+    width: 42px;
 
     pointer-events: none;
 
     background:
       linear-gradient(
-        to left,
+        270deg,
         var(--cream) 0%,
-        rgba(248, 242, 231, 0.80) 30%,
+        rgba(248, 242, 231, 0.92) 12%,
+        rgba(248, 242, 231, 0.65) 38%,
         rgba(248, 242, 231, 0.25) 70%,
-        transparent 100%
+        rgba(248, 242, 231, 0) 100%
       );
   }
+
 
   /* OLIVIERS */
 
@@ -1564,7 +1334,6 @@ footer {
       url("assets/Mas2.jpg");
 
     background-size: cover;
-
     background-position: center;
   }
 
@@ -1630,7 +1399,6 @@ footer {
 
   .radio-group {
     flex-direction: column;
-
     align-items: flex-start;
   }
 
